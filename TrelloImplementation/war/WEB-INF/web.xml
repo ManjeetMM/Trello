@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>TrelloImplementation</servlet-name>
+		<servlet-class>com.manjeet.trelloimplementation.TrelloImplementationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TrelloImplementation</servlet-name>
+		<url-pattern>/trelloimplementation</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Board</servlet-name>
+		<servlet-class>com.manjeet.trelloimplementation.BoardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Board</servlet-name>
+		<url-pattern>/boardsubmit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RenameBoard</servlet-name>
+		<servlet-class>com.manjeet.trelloimplementation.RenameBoard</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RenameBoard</servlet-name>
+		<url-pattern>/renameBoard</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>CardListServlet</servlet-name>
+		<servlet-class>com.manjeet.trelloimplementation.CardListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CardListServlet</servlet-name>
+		<url-pattern>/CardListServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Cards</servlet-name>
+		<servlet-class>com.manjeet.trelloimplementation.CardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cards</servlet-name>
+		<url-pattern>/card</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
